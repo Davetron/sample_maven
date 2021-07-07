@@ -35,6 +35,6 @@ public class Pipeline {
                                 dummyTask("destroy Openstack instance")
                         )
                 )*/
-        );
+        ).start();
     }
 }
