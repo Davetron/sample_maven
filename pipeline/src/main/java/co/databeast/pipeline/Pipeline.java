@@ -22,7 +22,7 @@ public class Pipeline {
                                 dummyTask("get config"),
                                 dummyTask("Upload config to artifactory")
                         )
-                ),
+                )/*,
                 stage("Test",
                         job("Azure Acceptance Test",
                                 dummyTask("deploy Azure instance"),
@@ -34,7 +34,7 @@ public class Pipeline {
                                 //maven("test"),
                                 dummyTask("destroy Openstack instance")
                         )
-                )
-        ).start();
+                )*/
+        );
     }
 }
