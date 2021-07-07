@@ -17,10 +17,6 @@ public class Pipeline {
                         job("Application Build",
                                 gitClone(REPOSITORY_URI),
                                 maven("install")
-                        ),
-                        job("Configuration packaging",
-                                dummyTask("get config"),
-                                dummyTask("Upload config to artifactory")
                         )
                 )/*,
                 stage("Test",
